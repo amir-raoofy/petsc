@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
 	Mat A;
   PetscErrorCode ierr;
 	Vec x,y;
-	PetscInt n =10000001,low,high,i,j;
+	PetscInt n =1001,low,high,i,j;
 	PetscScalar len,d,u,l,h;
 	//PetscReal nrm;
 
