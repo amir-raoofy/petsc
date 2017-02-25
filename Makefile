@@ -7,12 +7,13 @@ all: compile
 
 compile:
 	$(MPI) $(CFLAGS) threePointStencil.cpp -o threePointStencil $(PETSC_LIB)
+	$(MPI) $(CFLAGS) fivePointStencil.cpp -o fivePointStencil $(PETSC_LIB)
 
 clean:
 	rm -rf *.o
-	rm -rf threePointStencil
+	rm -rf threePointStencil fivePointStencil
 
 run:
-	mpiexec -n 2 ./threePointStencil
+	mpiexec -n 2 ./fivePointStencil
 
 

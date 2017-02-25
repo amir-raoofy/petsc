@@ -1,5 +1,5 @@
 #!/bin/sh  
-f=threePointStencil.cpp 
+f=fivePointStencil.cpp 
 tmpf="`mktemp /tmp/onchange.XXXXX`"  
 cp "$f" "$tmpf"  
 trap "rm $tmpf; exit 1" 2  
